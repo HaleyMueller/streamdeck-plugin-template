@@ -1,9 +1,9 @@
 {
 	"SDKVersion": 2,
-	"Author": "Elgato Systems",
+	"Author": "CrownedHaley",
 	"CodePath": "app.html",
-	"Description": "Example description",
-	"Name": "Stream Deck Template",
+	"Description": "Control a PiShock",
+	"Name": "PiShock Controller",
 	"Icon": "actions/template/assets/action",
 	"URL": "https://www.elgato.com/en/gaming/stream-deck",
 	"Version": "1.0.2",
@@ -25,24 +25,28 @@
 	"Actions": [
 		{
 			"Icon": "actions/template/assets/actionimage",
-			"Name": "Example Action",
-			"Controllers": ["Keypad", "Encoder"],
-			"Encoder": {
-				"layout": "$B1",
-				"TriggerDescription": {
-					"Rotate": "Describe the rotation",
-					"Push": "Describe the encoder push",
-					"Touch": "Describe the touch",
-					"LongTouch": "Describe the long touch"
-				}
-			},
+			"Name": "Test Connection",
+			"Controllers": ["Keypad"],
 			"States": [
 				{
 					"Image": "actions/template/assets/action"
 				}
 			],
 			"Tooltip": "This is an example tooltip",
-			"UUID": "com.elgato.template.action",
+			"UUID": "com.crownedhaley.pishock.action",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+		},
+		{
+			"Icon": "actions/template/assets/actionimage",
+			"Name": "Test Shock",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/template/assets/bolt"
+				}
+			],
+			"Tooltip": "This is an example tooltip",
+			"UUID": "com.crownedhaley.pishock.actionshock",
 			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
 		}
 	]

@@ -24,21 +24,34 @@
         <hr class="tab-separator">
         <form id="property-inspector">
             <div id="tab1" class="tab-container">
-                <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="My name">Name</div>
-                    <input data-localize class="sdpi-item-value" name="name" type="text" value="" placeholder="Click Me" />
+                
+				<div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Pi Shock Code</div>
+                    <input data-localize class="sdpi-item-value" name="code" type="text" value="2BDFD467853" />
                 </div>
 
-                <div type="textarea" class="sdpi-item">
-                    <div class="sdpi-item-label" data-localize title="My message">Message</div>
-                    <div class="sdpi-item-value textarea">
-                        <textarea
-                                  name="message"
-                                  type="textarea"
-                                  maxlength="50"
-                                  class="three-lines"></textarea>
-                    </div>
+				
+				<div class="sdpi-item">
+                    <div class="sdpi-item-label" data-localize title="My message">Type</div>
+                    						<select class="sdpi-item-value" name="shockType" id="shockType">
+						  <option value="0">Shock</option>
+						  <option value="1">Vibrate</option>
+						  <option value="2">Beep</option>
+						  <option value="-1">Random</option>
+						</select>
                 </div>
+				
+				<div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Power</div>
+                    <input data-localize class="sdpi-item-value" name="power" type="number" value="1" />
+                </div>
+				
+				<div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Duration</div>
+                    <input data-localize class="sdpi-item-value" name="duration" type="number" value="1" />
+                </div>
+				
+				
             </div>
             <div id="tab2" class="tab-container">
                 <div class="sdpi-item">
